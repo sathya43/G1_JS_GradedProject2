@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+}
+
+.login-form {
+  left: 50%;
+  top: 50%;
+  height: 40%;
+  width: 40%;
+  margin-top: 50%;
+  margin-left: -25%;
+  position: absolute;
+  margin-top: -25%;
+  background-color: yellow;
+}
+
+form {
+  left: 35%;
+  top: 50%;
+  margin-left: -25%;
+  position: absolute;
+  margin-top: -25%;
+}
+
+input {
+  width: 85%;
+  padding: 10px;
+  border: 1px solid #797979;
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 20px;
+  border-radius: 3px;
+  margin: 20px;
+}
+button {
+  margin: 20px;
+  padding: 10px;
+  width: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: linear-gradient(90deg, royalblue, lightgreen);
+  font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.title p {
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: indianred;
+  margin: 0;
+}
+.border {
+  width: 80px;
+  height: 4px;
+  margin: 3px 0;
+  margin-bottom: 30px;
+  border-radius: 2px;
+  background: coral;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: sticky;
+  top: 0;
+  background: whitesmoke;
+  z-index: 1;
+}
+
+#application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: sticky;
+  top: 0px;
+  background: aqua;
+  z-index: 1;
+}
+
+.h-blocks {
+  display: inline-block;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 150px;
+}
+
+#title {
+  margin-left: 40%;
+}
+
+#applicant-name {
+  font-size: 40px;
+  padding: 10px;
+  margin: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#applicant-role {
+  font-size: 24px;
+  padding: 10px;
+  margin: 5px;
+}
+
+#card {
+  margin-top: 2%;
+  margin-left: 2%;
+  height: 40%;
+  position: fixed;
+  padding: 0.5%;
+  background-color: rgb(250, 212, 218);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  overflow: hidden;
+}
+
+.card-item {
+  background-color: grey;
+  color: black;
+  font-size: 24px;
+  margin: 2px;
+  padding: 5px;
+}
+
+.r-float {
+  text-align: right;
+}
+
+.headers {
+  font-size: 30px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.info {
+  margin-left: 2%;
+}
+
+._bold {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sections,
+.c-block {
+  display: block;
+}
+
+.Login-page {
+  display: none;
+}
+
+.Search_template {
+  display: visible;
+}
