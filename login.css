@@ -1,0 +1,55 @@
+/************************** Login page css*********************************/
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: grey;
+}
+
+form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  height: 30%;
+  width: 40%;
+  background-color: yellow;
+}
+
+form h1 {
+  margin-top: 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type='text'],
+form input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+form button[type='submit'] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button[type='submit']:hover {
+  background-color: #2a49bb;
+}
+
+.error-message {
+  display: block;
+  color: red;
+  font-size: 0.8em;
+  margin-top: 0.25em;
+}

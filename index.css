@@ -1,0 +1,184 @@
+/* Set the container to a 2-column grid */
+.container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-gap: 20px;
+  height: 100vh;
+}
+
+/* Style the left column */
+.left-column {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* Style the right column */
+.right-column {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/* Add some basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style the header */
+header {
+  background-color: aqua;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Style the name in the header */
+.header-name {
+  font-size: 32px;
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Style the user icon in the header */
+.user-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url(User.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Style the user icon container in the header */
+.user-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+#applicant-name {
+  font-size: 32px;
+  line-height: 0.5;
+  margin-top: 0;
+}
+#applied-position {
+  font-size: 20px;
+  line-height: 0.5;
+  margin-top: 0;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.left-btn {
+  margin-right: 10px;
+}
+
+.center-input {
+  flex-grow: 1;
+  margin: 0 auto;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 50%;
+}
+
+.right-btn {
+  margin-left: 10px;
+}
+
+.resume {
+  margin-top: 15px;
+}
+
+.personal-info {
+  background-color: rgb(250, 212, 218);
+  padding: 20px;
+  height: fit-content;
+}
+
+.personal-info-item {
+  margin-top: 5%;
+  background-color: grey;
+  padding: 3px;
+  display: block;
+}
+
+.personal-info-item-content {
+  margin-top: 5%;
+  text-align: right;
+  padding: 3px;
+  display: block;
+}
+
+.section-content {
+  margin-left: 3%;
+}
+
+.isVisible {
+  display: visible;
+}
+
+.notVisible {
+  display: none;
+}
+
+#not-found-error-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 25%;
+  width: 25%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  border: 2px solid black;
+  color: black;
+}
+
+#not-found-error-message img {
+  margin-right: 10px;
+  width: 40%;
+  height: 40%;
+}
