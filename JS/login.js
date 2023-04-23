@@ -10,14 +10,15 @@ const loginContainer = document.querySelector('.login-container')
 const results = document.querySelector('.results')
 const loginDiv = document.getElementById('login-div')
 
-results.classList.add('notVisible')
-loginContainer.classList.add('isVisible')
-
 // define array of users
 const users = [
   {
     username: 'admin',
     password: 'admin',
+  },
+  {
+    username: 'user',
+    password: 'user',
   },
   {
     username: 'user1',
@@ -54,16 +55,13 @@ form.addEventListener('submit', function (event) {
   } else if (!user) {
     loginError.textContent = 'Invalid username or password. Please try again.'
   } else {
-    console.log('Logged in')
+    console.log('Successfully logged in')
+    // window.location.replace('main.html')
+    // Redirect to another HTML page
 
-    let pageTitle = document.querySelector('title')
-    pageTitle.innerHTML = 'Resume Filter page'
+    // Set a flag to indicate that the user is logged in
+    sessionStorage.setItem('isLoggedIn', 'true')
 
-    loginContainer.classList.add('notVisible')
-    loginDiv.classList.remove('login-container')
-    loginDiv.classList.remove('isVisible')
-
-    results.classList.remove('notVisible')
-    results.classList.add('isVisible')
+    window.location.href = 'main.html'
   }
 })

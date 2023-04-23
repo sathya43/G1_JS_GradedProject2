@@ -70,6 +70,8 @@ function noResultFound() {
   let notFoundContainer = document.querySelector('#not-found-error-message')
   notFoundContainer.classList.add('isVisible')
   notFoundContainer.classList.remove('notVisible')
+
+  buttonsDisplayBasedOnIndex(currFilteredArray, 0)
 }
 
 function setResultsDisplayElements() {
@@ -92,6 +94,11 @@ function loadFilteredResumes(filteredResumes, index) {
 function buttonsDisplayBasedOnIndex(filteredResumes, index) {
   let leftBtn = document.querySelector('.left-btn')
   let rightBtn = document.querySelector('.right-btn')
+
+  if (filteredResumes.length == 0) {
+    rightBtn.classList.remove('isVisible')
+    rightBtn.classList.add('notVisible')
+  }
 
   if (filteredResumes.length > 1) {
     rightBtn.classList.remove('notVisible')

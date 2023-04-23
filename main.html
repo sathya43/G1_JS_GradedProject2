@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/login.css" />
+  </head>
+  <body>
+    <div class="results isVisible">
+      <div class="search-container">
+        <button class="left-btn">Previous</button>
+        <input
+          type="text"
+          class="center-input"
+          placeholder="Search for keywords(skills) to filter the resume or search by position"
+        />
+        <button class="right-btn">Next</button>
+      </div>
+      <div class="resume">
+        <header>
+          <h1 class="header-name">
+            <p id="applicant-name">John Doe</p>
+            <p id="applied-position">Applied For:</p>
+          </h1>
+          <div class="user-icon-container">
+            <div class="user-icon"></div>
+          </div>
+        </header>
+        <div class="container">
+          <div class="left-column">
+            <div class="personal-info"></div>
+          </div>
+          <div class="right-column"></div>
+        </div>
+      </div>
+      <div id="not-found-error-message" class="notVisible">
+        <img src="./Images/noresult.png" alt="Error icon" />
+        <span>No results found</span>
+      </div>
+    </div>
+
+    <script src="./JS/index.js" type="module"></script>
+  </body>
+</html>
