@@ -1,44 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link rel="stylesheet" href="./CSS/index.css" />
-    <link rel="stylesheet" href="./CSS/login.css" />
+    <link rel="stylesheet" href="CSS/login.css" />
+    <script type="text/javascript">
+      function preventBack() {
+        window.history.forward()
+      }
+      setTimeout('preventBack()', 0)
+
+      window.onunload = function () {
+        if (sessionStorage.getItem('isLoggedIn') === 'true') {
+          window.location.href = 'main.html'
+        }
+        null
+      }
+    </script>
   </head>
   <body>
-    <div class="results isVisible">
-      <div class="search-container">
-        <button class="left-btn">Previous</button>
+    <div class="login-container" id="login-div">
+      <form id="login-form">
+        <h1>Login</h1>
+        <span id="login-error" class="error-message"></span>
+        <label for="username">Username:</label>
         <input
           type="text"
-          class="center-input"
-          placeholder="Search for keywords(skills) to filter the resume or search by position"
+          id="username"
+          name="username"
+          placeholder="Enter Username (default:admin)"
         />
-        <button class="right-btn">Next</button>
-      </div>
-      <div class="resume">
-        <header>
-          <h1 class="header-name">
-            <p id="applicant-name">John Doe</p>
-            <p id="applied-position">Applied For:</p>
-          </h1>
-          <div class="user-icon-container">
-            <div class="user-icon"></div>
-          </div>
-        </header>
-        <div class="container">
-          <div class="left-column">
-            <div class="personal-info"></div>
-          </div>
-          <div class="right-column"></div>
-        </div>
-      </div>
-      <div id="not-found-error-message" class="notVisible">
-        <img src="./Images/noresult.png" alt="Error icon" />
-        <span>No results found</span>
-      </div>
+        <span id="username-error" class="error-message"></span>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter Password (default:admin)"
+        />
+        <span id="password-error" class="error-message"></span>
+        <button type="submit">Login</button>
+      </form>
     </div>
 
-    <script src="./JS/index.js" type="module"></script>
+    <script src="JS/login.js"></script>
   </body>
 </html>
