@@ -4,7 +4,7 @@ var resume = []
 var currFilteredArray = []
 var currIndex = 0
 
-fetch('/JS/Data.json')
+fetch('/inputData/Data.json')
   .then((response) => response.json())
   .then((data) => {
     resume = JSON.parse(JSON.stringify(data))
