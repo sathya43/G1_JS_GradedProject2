@@ -12,6 +12,7 @@
   padding: 20px;
   display: table-cell;
   vertical-align: top;
+  width: fit-content;
 }
 
 /* Style the right column */
@@ -132,6 +133,7 @@ header {
   background-color: rgb(250, 212, 218);
   padding: 20px;
   height: fit-content;
+  width: fit-content;
 }
 
 .personal-info-item {
