@@ -16,6 +16,10 @@ loginContainer.classList.add('isVisible')
 // define array of users
 const users = [
   {
+    username: 'admin',
+    password: 'admin',
+  },
+  {
     username: 'user1',
     password: 'password1',
   },
@@ -54,6 +58,7 @@ form.addEventListener('submit', function (event) {
 
     loginContainer.classList.add('notVisible')
     loginDiv.classList.remove('login-container')
+    loginDiv.classList.remove('isVisible')
 
     results.classList.remove('notVisible')
     results.classList.add('isVisible')

@@ -40,7 +40,7 @@ p {
 ul {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  list-style-type: disc;
 }
 
 li {
@@ -77,7 +77,7 @@ header {
   width: 50px;
   border-radius: 50%;
   background-color: #fff;
-  background-image: url(User.png);
+  background-image: url('../Images/User.png');
   background-size: cover;
   background-position: center;
 }

@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>My Resume Index</title>
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/login.css" />
   </head>
   <body>
     <div class="login-container" id="login-div">
@@ -36,7 +36,7 @@
         <input
           type="text"
           class="center-input"
-          placeholder="Search for keywords to filter the resume"
+          placeholder="Search for keywords(skills) to filter the resume or search by position"
         />
         <button class="right-btn">Next</button>
       </div>
@@ -58,12 +58,12 @@
         </div>
       </div>
       <div id="not-found-error-message" class="notVisible">
-        <img src="./noresult.png" alt="Error icon" />
+        <img src="./Images/noresult.png" alt="Error icon" />
         <span>No results found</span>
       </div>
     </div>
 
-    <script src="./index.js"></script>
-    <script src="./login.js"></script>
+    <script src="./JS/index.js" type="module"></script>
+    <script src="./JS/login.js"></script>
   </body>
 </html>
