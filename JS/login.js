@@ -56,6 +56,9 @@ form.addEventListener('submit', function (event) {
   } else {
     console.log('Logged in')
 
+    let pageTitle = document.querySelector('title')
+    pageTitle.innerHTML = 'Resume Filter page'
+
     loginContainer.classList.add('notVisible')
     loginDiv.classList.remove('login-container')
     loginDiv.classList.remove('isVisible')
