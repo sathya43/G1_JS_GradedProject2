@@ -20,10 +20,8 @@ command 2: http-server
 
 The project should be run on server to avoid CORS issues as per ES6
 
-Please refer following for more info 
-
     ES6 modules are subject to same-origin policy. You need to run your script from a local server, opening the file directly with a browser will not work.
-see here ES6 module support in Chrome 62/Chrome Canary 64, does not work locally, CORS error
+
 
 Server will be available on
 
